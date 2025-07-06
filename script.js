@@ -1,3 +1,7 @@
+<script type="module" src="./components/featured-projects.js"></script>
+<script type="module" src="./components/contact-form.js"></script>
+<script type="module" src="./components/footer-component.js"></script>
+
 // ===== PERFECT BLENDING RESPONSIVE ENHANCEMENT SYSTEM =====
 
 // Advanced Responsive Management System
