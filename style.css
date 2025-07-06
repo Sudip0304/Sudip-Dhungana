@@ -4070,3 +4070,10 @@ footer::after {
 .project-tech {
     flex-shrink: 0 !important;
 }
+.skill-category {
+  display: none;
+}
+
+.skill-category.active {
+  display: block;
+}
