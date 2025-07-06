@@ -1715,3 +1715,4 @@ window.debugProjectFilters = function() {
         });
       });
     });
+<script type="module" src="components/featured-projects.js"></script>
