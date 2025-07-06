@@ -1713,7 +1713,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Add active class to clicked button and matching category
       button.classList.add('active');
-      document.querySelector(`.skill-category[data-category="${category}"]`).classList.add('active');
+      const targetCategory = document.querySelector(`.skill-category[data-category="${category}"]`);
+      if (targetCategory) {
+        targetCategory.classList.add('active');
+      }
     });
   });
 });
