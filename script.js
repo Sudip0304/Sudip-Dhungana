@@ -1698,3 +1698,22 @@ window.debugProjectFilters = function() {
 
 // // Start simple typewriter immediately
 // // setTimeout(startSimpleTypewriter, 1000); // Disabled for debugging
+
+document.addEventListener('DOMContentLoaded', () => {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const skillCategories = document.querySelectorAll('.skill-category');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-category');
+
+      // Remove active class from all buttons and categories
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      skillCategories.forEach(cat => cat.classList.remove('active'));
+
+      // Add active class to clicked button and matching category
+      button.classList.add('active');
+      document.querySelector(`.skill-category[data-category="${category}"]`).classList.add('active');
+    });
+  });
+});
