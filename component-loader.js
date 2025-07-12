@@ -27,12 +27,12 @@ class ComponentLoader {
      * @param {HTMLElement} container - Container element to load the component into
      */
     async loadComponent(componentName, container) {
-        try {
-            // Load HTML content
-            const htmlResponse = await fetch(`components/${componentName}.html`);
-            if (!htmlResponse.ok) {
-                throw new Error(`Failed to load ${componentName}.html: ${htmlResponse.status}`);
-            }
+        // try {
+        //     // Load HTML content
+        //     const htmlResponse = await fetch(`components/${componentName}.html`);
+        //     if (!htmlResponse.ok) {
+        //         throw new Error(`Failed to load ${componentName}.html: ${htmlResponse.status}`);
+        //     }
             
             const htmlContent = await htmlResponse.text();
             container.innerHTML = htmlContent;
