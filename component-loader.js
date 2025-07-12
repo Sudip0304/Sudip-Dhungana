@@ -74,11 +74,11 @@ class ComponentLoader {
      * @param {string} str - String to convert
      * @returns {string} PascalCase string
      */
-    // toPascalCase(str) {
-    //     return str
-    //         .split('-')
-    //         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    //         .join('');
+    toPascalCase(str) {
+        return str
+            .split('-')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join('');
     }
 
     /**
