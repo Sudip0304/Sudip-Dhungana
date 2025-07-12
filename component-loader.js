@@ -43,11 +43,11 @@ class ComponentLoader {
             this.loadedComponents.add(componentName);
             console.log(`✅ Component '${componentName}' loaded successfully`);
             
-        } catch (error) {
-            console.error(`❌ Error loading component '${componentName}':`, error);
-            // Fallback content
-            container.innerHTML = `<div class="component-error">Failed to load ${componentName} component</div>`;
-        }
+        // } catch (error) {
+        //     console.error(`❌ Error loading component '${componentName}':`, error);
+        //     // Fallback content
+        //     container.innerHTML = `<div class="component-error">Failed to load ${componentName} component</div>`;
+        // }
     }
 
     /**
